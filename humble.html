@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="humble.css">
+</head>
+
+<body>
+    <main>
+        <section class="game">
+            <div class="quiz">QUIZ</div>
+            <section class="questions">
+                <h1 class="ques"></h1>
+            </section>
+            <section class="options">
+                <button class="options1"></button>
+                <button class="options2"></button>
+                <button class="options3"></button>
+                <button class="options4"></button>
+                <p style="padding: 10px 0px">
+                    Question <span class="questionCount">1</span>/15
+                </p>
+            </section>
+        </section>
+        <section>
+            <div class="loader"></div>
+            <section class="gameOver">
+                <h1>Game Over</h1>
+                <h3>Score: <span class="score"></span> /15</h3>
+                <div class="playAgain" onclick="playAgain()">Play Again</div>
+            </section>
+        </section>
+    </main>
+    <script src="huble.js"></script>
+</body>
+
+</html>

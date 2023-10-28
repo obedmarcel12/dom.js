@@ -1,0 +1,172 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+main {
+    background-color: rgb(9, 9, 51);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.ques {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+}
+
+.game {
+    height: 90vh;
+    background-color: rgb(9, 9, 77);
+    width: 40vw;
+    box-shadow: rgba(0.5, 0.5, 0.5, 0.6) 5px 5px 5px 5px;
+    border-radius: 25px;
+    display: none;
+}
+
+.quiz {
+    width: 20vw;
+    background-color: white;
+    position: relative;
+    height: 6vh;
+    left: 130px;
+    top: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.questions {
+    color: white;
+    height: 30vh;
+    border-bottom: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    height: 50vh;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    color: white;
+    font-weight: 900;
+}
+
+button {
+    position: relative;
+    top: 13px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: black;
+    background-color: white;
+    min-height: 10vh;
+    height: fit-content;
+    font-weight: 900;
+    font-size: medium;
+    padding: 10px;
+    width: 35vw;
+    border-radius: 10px;
+}
+
+.loader {
+    border: 10px solid #f3f3f3;
+    /* Light grey */
+    border-top: 10px solid rgb(9, 9, 77);
+    /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.gameOver {
+    color: white;
+    display: none;
+    padding: 30px;
+    box-shadow: rgba(0.5, 0.5, 0.9) 5px 5px 5px;
+    gap: 10px;
+    background-color: rgb(9, 9, 77);
+}
+
+.playAgain {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: xx-large;
+    position: relative;
+    top: 13px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    box-shadow: black;
+    background-color: white;
+    min-height: 10vh;
+    height: fit-content;
+    padding: 10px;
+    width: 25vw;
+    border-radius: 10px;
+}
+
+@media (max-width: 300px) {
+    .questions {
+        height: 50vh;
+    }
+
+    .game {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .quiz {
+        position: relative;
+        left: 108px;
+    }
+
+    .game {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 800px) {
+    .quiz {
+        position: relative;
+        left: 200px;
+    }
+}
+
+@media (min-width: 1100px) {
+    .quiz {
+        position: relative;
+        left: 130px;
+    }
+}
